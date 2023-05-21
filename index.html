@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script> ScrollReveal({ reset: true, duration: 1000, delay:500}); </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black; 
+            color: whitesmoke;
+        }
+
+        body, html {
+            overflow-x: hidden;
+        }
+
+
+        .menu {
+            background-color: black;
+            height: 60px;
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        .menu-text {
+            /* background-color: pink; */
+            height: 50px;
+        }
+
+        .menu-image {
+            /* background-color: violet; */
+            height: 50px;
+        }
+
+        .col-logo {
+            /* background-color: blue; */
+            justify-content: center;
+        }
+
+        .logo {
+             /* background-color: whitesmoke; */
+            margin: 5px;
+            width: 50px;
+            height: 50px;   
+        }
+
+        .a-button {
+            color: whitesmoke;
+        }
+
+        .a-button:hover{
+            color: whitesmoke;
+        }
+
+        .main-content {
+            background-color: rgb(67, 67, 67);
+        }
+
+        .main-text {
+            margin-left: 60px;
+        }
+
+        .text-bar > p {
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+            font-family: 'Russo One', sans-serif;
+            font-size: 90px;
+            display: inline-block;
+            line-height: 80px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            /* text-indent: 30px; */
+        }
+
+        .text-bar {
+            animation: moving 30s linear infinite;
+            display: flex;
+            white-space: nowrap;
+            height: 100%;
+            margin: 0%;
+            padding: 0;
+
+        }
+
+        .text-scroll {
+            margin: 0;
+            padding: 0;
+            border-bottom: 4px solid white;
+            border-top: 4px solid white;            
+        }
+
+        @keyframes moving {
+            from {
+                transform: translateX(120%);
+            }
+            
+            to {
+                transform: translateX(-450%);
+            }
+        }
+
+
+        @media (max-width: 800px) {
+            @keyframes moving {
+                from {
+                    transform: translateX(120%);
+                }
+                
+                to {
+                    transform: translateX(-1800%);
+                }
+
+            }
+
+            .text-bar {
+                animation: moving 30s linear infinite;
+            }
+
+
+        }
+
+        .block {
+            padding: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .block-image {
+            width: 400px;
+            height: 400px;
+        }
+
+     
+
+        .text-about {
+            overflow-y: hidden;
+        }
+
+        .text-about {
+            flex-wrap: wrap;
+            padding-top: 120px;
+            font-family: 'Neucha', cursive;
+            font-size: x-large;
+        }
+
+         /* .text-about > h2 {
+        }  */
+
+        .text-1 {
+            text-align: end;
+
+            @media (max-width: 800px) {
+                text-align: center;
+            }
+        }
+
+        .text-2 {
+            @media (max-width: 800px) {
+                text-align: center;
+                padding-top: 10px;
+            }
+        }
+
+        .text-rec {
+            padding: auto;
+            font-family: 'PT Mono', monospace;
+
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            /* border-radius: 15px; */
+
+        }
+
+        .image-1 {
+            border-left: 2px solid white;
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: 800px) {
+                border-left: 0px solid black;
+            }
+        }
+
+        .image-1 > img {
+            border-radius: 15px;
+        }
+
+        .image-2 > img {
+            border-radius: 15px;
+        }
+
+        .image-2 {
+            border-right: 2px solid white;
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: 800px) {
+                border-right: 0px solid black;
+            }
+        }
+
+        .vertical-text h2 {
+            border-left: 3px solid white;
+            font-size: 3em;
+            writing-mode: vertical-lr;
+            margin-bottom: 50px;
+
+            @media (max-width:800px) {
+                display: none;
+            }
+        }
+
+        .requi-2 {
+            border-left: 1px solid white;
+            @media (max-width:800px) {
+                padding-left: 5px;
+                padding-right: 5px;
+                border-left: 0px solid black
+            }
+
+
+        }
+
+        .requi-1 {
+            padding-left: 10px;
+
+            @media (max-width:800px) {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        .requi {
+            text-align: center;
+            /* margin-bottom: 30px; */
+        }
+
+        .secure {
+            border-bottom: 3px solid white;
+            font-weight: bolder;
+            width: fit-content;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 100px;
+
+            @media (min-width: 810px) {
+                display: none;
+            }
+        }
+
+        .foot {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(19, 19, 19);
+            justify-content: space-between;
+            overflow-y: hidden;
+            margin-top: 80px;
+            border-top: 4px solid white;
+        }
+
+        .web-ul > ul > li {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .web-ico {
+            width: 40px;
+            height: 40px;
+            /* background-color: darkslategray; */
+            display: flex;
+            margin-left: 10px;
+        }
+
+        .col-ico {
+            width: 60px;
+            height: 60px;
+            background-color: darkgrey;
+        }
+
+        .email {
+            transition: 1s;
+        }
+
+        .email > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .email:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .wait {
+            color: white;
+        }
+
+        .wait-more {
+            color: white;
+        }
+
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            z-index: 1000;
+            transition: 1.8s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .preloader > h2 {
+            font-size: xx-large;
+        }
+
+        .pre-img {
+            width: 120px;
+            height: 120px;
+            margin-right: 15px;
+        }
+
+    </style>
+    <title>project: CHILDHOOD</title>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="pre-img">
+            <img src="img/MHI LOGO_FOR DARK.png" alt="">
+        </div>
+        <h2>MHI STUDIOS</h2>
+    </div>
+
+        <header> <!-- меню сайту -->
+            <div class="container-fluid menu">
+                <div class="row menu"> <!-- first menu -->
+                    <div class="col-2 col-logo"> <img class="logo" src="img/good_times_logo.png" alt=""> </div> <!-- logo -->
+
+                    <div class="col">
+                        <ul class="nav menu-text nav-underline justify-content-end">
+                            <li class="nav-item"><a href="#about" class="nav-link a-button">опис</a></li>
+                            <li class="nav-item"><a href="#requi" class="nav-link a-button">хар-ки</a></li>
+                            <li class="nav-item"><a href="#foot" class="nav-link a-button">зв'язатись з нами</a></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+
+    <div class="container-fluid vh-100 main-content d-flex flex-column justify-content-center"> <!-- створюємо головний контейнер -->
+            <h1 class="main-text">PROJECT: <span class="wait">GOOD TIMES</span> </h1>
+            <h3 class="main-text wait-more">проект про приємний вайб 2019 року</h3>
+    </div>
+
+
+    <div class="text-scroll">
+        <div class="text-bar">
+            <p>!! NOSTALGIA WARNING !</p>
+            <p>!! NOSTALGIA WARNING !</p>
+            <p>!! NOSTALGIA WARNING !</p>
+            <p>!! NOSTALGIA WARNING !</p>
+            <p>!! NOSTALGIA WARNING !</p>
+            <p>!! NOSTALGIA WARNING !</p>
+            <p>!! NOSTALGIA WARNING !</p>
+        </div>
+    </div>
+
+    <div  class="container  text-about">
+        <div id="about" class="block row justify-content-center ">
+            <div class="block-text  text-1 col-sm-12 col-md-6">
+                <h2 class="text-rec">PROJECT: GOOD TIMES</h2>
+                <p class="">гра переносить вас у типове українське місто, а точніше у місто "Біла Церква". Події відбуваються влітку 2019 року, незадовго до пандемії. Гра жанру 
+                   "бродилка" дуже добре підійде до людей, які сумують за часом, що був до пандемії та війни. Також гра підійде тим, хто хоче побути наодинці, або разом 
+                   з друзями - подалі від реальності, оссобливо хто за кордоном.
+                </p>
+            </div>
+
+            <div class="block-image image-1 col col-sm-12 col-md-6">
+                <img src="https://i.pinimg.com/736x/80/8e/51/808e5168aa9ef3bfa43351208c1417fa.jpg" alt="spotlight at night">
+            </div>
+
+
+        </div>
+
+        <div class="block row justify-content-center ">
+            <div class="block-image image-2 col col-sm-12 col-md-6">
+                 <img src="https://img2.reactor.cc/pics/post/%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D0%BA%D0%B0-%D0%B5%D0%B1%D0%B5%D0%BD%D0%B5%D0%B9-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%D0%BA%D0%B0-7745582.jpeg" alt="view at garden">
+            </div>
+
+            <div class="block-text text-2 col-sm-12 col-md-6">
+                <h2 class="text-rec">знову пройдіться нічними вулицями тих добрих часів!</h2>
+                <p class="">пророблений до най-дрібнішої деталі мікрорайон, та графіка допоможе вам з головою поринути у ту атмосферу, де колись все було добре і спокійно. Та сама Ніч, 
+                   коли пробув на вулиці з самого ранку до пізьного вечора...
+                </p>
+            </div>
+        </div>
+
+        <div class="block row justify-content-center ">
+            <div class="block-text text-1 col-sm-12 col-md-6">
+                <h2 class="text-rec">ті самі відчуття</h2>
+                <p class="">та тиша, той спокій, коли не було цих переживань за вірус або повітряньої тривоги -- тривоги що буде далі. Ви відчуєте знову тей спокій і радість який був
+                   раніше, коли все було безтурботним та яскравим, де нема цих іпотек, податків, війн, хвороб. Тільки ви та спокій. Кожен звук, кожен піксель пропонує вам
+                   відчути весь цей спектр почуттів.
+                </p>
+            </div>
+
+            <div class="block-image image-1 col col-sm-12 col-md-6">
+                <img src="https://cs12.pikabu.ru/post_img/big/2022/02/02/3/1643768400246454670.png" alt="view at table">
+            </div>
+        </div>
+    </div>
+
+    <div class="secure">
+            <h2 class="secure-text">сис. вимоги</h2>
+    </div>
+    <div id="requi" class="container-fluid d-flex row-cols-auto requi">
+
+        <div class="col requi-1 col-xs-6 col-md-5">
+            <p>мінімальні:</p>
+            <p>диск: ~ 10 ГБ</p>
+            <p>Оперативна пкам'ять: 6 ГБ</p>
+            <p>процессор: intel core-i3</p>
+            <p>відеокарта: NVidia RTX-2070</p>
+            <p>directX: 10</p>
+        </div>
+        <div class="col requi-2 col-xs-6 col-md-5">
+            <p>рекомендовані:</p>
+            <p>диск: ~ 15 ГБ</p>
+            <p>Оперативна пам'ять: 16 ГБ</p>
+            <p>процессор: intel core-i5</p>
+            <p>відеокарта: NVidia RTX-3050</p>
+            <p>directX: 10</p>
+        </div>
+
+         <div class="col vertical-text .d-none .d-sm-block col-md-2">
+            <h2>сис. вимоги</h2>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="foot" class="container-fluid d-flex align-items-center row row-cols-auto foot">
+            <div class="col d-flex web-ul">
+                <a href="#"> <div class="web-ico"> <img src="img/discord-dark.png" alt=""> </div> </a>
+                <a href="#"> <div class="web-ico"> <img src="img/steam-dark.png" alt=""> </div> </a>
+                <a href="#"> <div class="web-ico"> <img src="img/github-dark.png" alt=""> </div> </a>
+                
+                
+                
+            </div>
+
+            <div class="col email">
+                <a href="mailto:xxxx@gmail.com">write via email</a>
+            </div>
+
+            <!-- <div class="col theme">
+                <a href="#"><div class="col-ico"></div></a>
+            </div> -->
+
+        </div>
+    </footer>
+
+
+    
+    
+
+    <script>
+        ScrollReveal().reveal('.block')
+        ScrollReveal().reveal('.requi')
+        ScrollReveal().reveal('.main-text ', {delay: 2000})
+        ScrollReveal().reveal('.wait ', {delay: 4000})
+        ScrollReveal().reveal('.wait-more ', {delay: 4500})
+    </script>
+
+    <script>
+        window.addEventListener('load', function () {
+            let preloader = document.querySelector('.preloader');
+            window.setTimeout(() => {
+                preloader.style.opacity = 0;
+            }, 1000)
+            window.setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 3000)
+        })
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
